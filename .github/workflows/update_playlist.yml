@@ -66,7 +66,7 @@ jobs:
         run: python generate_epg.py
 
       # Determine the URL where epg.xml will be accessible
-      # *** This step has the 'sed' line removed ***
+      # *** Uses direct branch name, removed problematic sed encoding line ***
       - name: Determine EPG URL
         id: epg_url
         run: |
@@ -78,14 +78,13 @@ jobs:
              # GITHUB_HEAD_REF is the branch name in PRs from forks
              BRANCH_NAME=${GITHUB_BASE_REF:-${GITHUB_HEAD_REF:-main}}
           fi
-          # The problematic sed line for URL encoding has been removed.
           RAW_URL="https://raw.githubusercontent.com/${{ github.repository }}/$BRANCH_NAME/epg.xml"
           echo "Determined EPG URL: $RAW_URL"
           # Make the URL available to other steps
           echo "epg_file_url=$RAW_URL" >> $GITHUB_OUTPUT
 
       # Modify the downloaded M3U file to include the EPG URL
-      # *** This step uses '#' as the sed delimiter ***
+      # *** This step uses sed '1c...' to replace the first line ***
       - name: Update fetched M3U file with EPG URL
         run: |
           M3U_FILE="${{ steps.fetch_m3u.outputs.m3u_filename }}"
@@ -96,16 +95,24 @@ jobs:
             exit 1
           fi
 
-          echo "Updating $M3U_FILE with EPG URL: $EPG_URL"
-          # Use '#' as the delimiter for sed. Escape the literal '#' in '#EXTM3U'
-          sed -i '1s#^#EXTM3U.*#\#EXTM3U tvg-url="'"$EPG_URL"'"#' "$M3U_FILE"
+          echo "Updating $M3U_FILE with EPG URL: $EPG_URL (using sed 1c)"
+          # Use the 'c' command to completely replace line 1
+          # Still need to escape the literal '#' in the replacement text when using single quotes
+          sed -i '1c\#EXTM3U tvg-url="'"$EPG_URL"'"' "$M3U_FILE"
 
           # Verify the change
           echo "First line of $M3U_FILE after update attempt:"
           head -n 1 "$M3U_FILE"
-          # Optional: Add a check to ensure the line was actually modified as expected
+          # Check if the replacement was successful
           if ! head -n 1 "$M3U_FILE" | grep -q "tvg-url=\"$EPG_URL\""; then
-            echo "::warning::sed command might not have updated the tvg-url correctly. Please check the M3U file."
+            echo "::error::sed '1c' command failed to update the tvg-url correctly. Please check the M3U file and logs."
+            # Optional: Dump more file info for debugging
+            echo "--- Start of $M3U_FILE ---"
+            head "$M3U_FILE"
+            echo "--- End of head ---"
+            exit 1 # Fail the step if verification fails
+          else
+            echo "First line successfully updated."
           fi
 
       # Commit both the generated epg.xml and the modified playlist.m3u
