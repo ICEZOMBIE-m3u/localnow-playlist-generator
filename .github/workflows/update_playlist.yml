@@ -1,15 +1,16 @@
-name: Fetch M3U, Generate EPG, Update Playlist
+name: Generate LocalNow EPG XML # Workflow name updated for clarity
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual triggering
   schedule:
+    # Runs every day at 4:00 AM UTC (adjust as needed)
     - cron: '0 4 * * *'
 
 jobs:
-  build-playlist:
+  build-epg: # Job name updated for clarity
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Needed to commit epg.xml
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v4
@@ -17,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.10' # Or your preferred version
           cache: 'pip'
 
       - name: Install dependencies
@@ -25,89 +26,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # *** Enhanced Fetch Step ***
-      - name: Fetch remote M3U file
-        id: fetch_m3u
-        run: |
-          M3U_URL="https://www.apsattv.com/localnow.m3u"
-          OUTPUT_M3U="playlist.m3u"
-          FETCH_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-
-          echo "Fetching M3U from $M3U_URL"
-          # Use curl: -A User-Agent, -L follows redirects, -f fails silently on server errors, -s silent progress, -o saves to file
-          # We capture the exit code ($?) immediately after curl runs.
-          curl -A "$FETCH_USER_AGENT" -Lfs -o "$OUTPUT_M3U" "$M3U_URL"
-          CURL_EXIT_CODE=$?
-
-          # Check if curl command failed (non-zero exit code)
-          if [[ $CURL_EXIT_CODE -ne 0 ]]; then
-            echo "::error::curl command failed with exit code $CURL_EXIT_CODE when fetching $M3U_URL"
-            # Attempt to show the invalid downloaded content if any
-            if [[ -f "$OUTPUT_M3U" ]]; then
-               echo "--- Start of potentially invalid downloaded file ---"
-               head "$OUTPUT_M3U"
-               echo "--- End of head ---"
-            fi
-            exit 1
-          fi
-
-          # Check if the downloaded file actually contains playlist entries
-          if ! grep -q '#EXTINF' "$OUTPUT_M3U"; then
-            echo "::error::Downloaded file $OUTPUT_M3U does not appear to be a valid M3U playlist (missing #EXTINF tags)."
-            echo "--- Start of downloaded file ---"
-            head "$OUTPUT_M3U"
-            echo "--- End of head ---"
-            exit 1
-          fi
-
-          echo "M3U file fetched successfully and saved as $OUTPUT_M3U"
-          echo "m3u_filename=$OUTPUT_M3U" >> $GITHUB_OUTPUT
+      # Removed the M3U fetching and modification steps
 
       - name: Run EPG generation script
-        run: python generate_epg.py
+        run: python generate_epg.py # This creates epg.xml in the workspace
 
-      - name: Determine EPG URL
-        id: epg_url
-        run: |
-          BRANCH_NAME=${GITHUB_REF#refs/heads/}
-          if [[ -z "$BRANCH_NAME" ]]; then
-             BRANCH_NAME=${GITHUB_BASE_REF:-${GITHUB_HEAD_REF:-main}}
-          fi
-          RAW_URL="https://raw.githubusercontent.com/${{ github.repository }}/$BRANCH_NAME/epg.xml"
-          echo "Determined EPG URL: $RAW_URL"
-          echo "epg_file_url=$RAW_URL" >> $GITHUB_OUTPUT
-
-      - name: Update fetched M3U file with EPG URL
-        run: |
-          M3U_FILE="${{ steps.fetch_m3u.outputs.m3u_filename }}"
-          EPG_URL="${{ steps.epg_url.outputs.epg_file_url }}"
-
-          if [[ -z "$EPG_URL" ]]; then
-            echo "::error::EPG URL is empty. Cannot update M3U file."
-            exit 1
-          fi
-
-          echo "Updating $M3U_FILE with EPG URL: $EPG_URL (using sed 1c)"
-          # Use the 'c' command to completely replace line 1
-          sed -i '1c\#EXTM3U tvg-url="'"$EPG_URL"'"' "$M3U_FILE"
-
-          echo "First line of $M3U_FILE after update attempt:"
-          head -n 1 "$M3U_FILE"
-          if ! head -n 1 "$M3U_FILE" | grep -q "tvg-url=\"$EPG_URL\""; then
-            echo "::error::sed '1c' command failed to update the tvg-url correctly. Please check the M3U file and logs."
-            echo "--- Start of $M3U_FILE ---"
-            head "$M3U_FILE"
-            echo "--- End of head ---"
-            exit 1
-          else
-            echo "First line successfully updated."
-          fi
-
-      - name: Commit and push updated files
+      # Commit ONLY the epg.xml file if it has changed
+      - name: Commit and push epg.xml
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Automated EPG generation and M3U fetch/update"
-          file_pattern: "epg.xml ${{ steps.fetch_m3u.outputs.m3u_filename }}"
+          commit_message: "Automated EPG update" # Commit message reflects only EPG
+          file_pattern: "epg.xml" # Only track changes to epg.xml
           commit_user_name: "GitHub Actions Bot"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
           commit_author: "GitHub Actions Bot <github-actions[bot]@users.noreply.github.com>"
