@@ -1,41 +1,42 @@
+name: Generate LocalNow EPG XML # Workflow name updated for clarity
+
 on:
-workflow_dispatch: # Allows manual triggering
-schedule:
-# Runs every day at 4:00 AM UTC (adjust as needed)
-- cron: '0 4 * * *'
+  workflow_dispatch: # Allows manual triggering
+  schedule:
+    # Runs every 2 hours, at the top of the hour (00:00, 02:00, 04:00 UTC, etc.)
+    - cron: '0 */2 * * *' # <--- Schedule changed to run every 2 hours
 
 jobs:
-build-epg: # Job name updated for clarity
-runs-on: ubuntu-latest
-permissions:
-contents: write # Needed to commit epg.xml
-steps:
-- name: Checkout repository code
-uses: actions/checkout@v4
+  build-epg: # Job name updated for clarity
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to commit epg.xml
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
 
-      
-- name: Set up Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: '3.10' # Or your preferred version
-      cache: 'pip'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # Or your preferred version
+          cache: 'pip'
 
-  - name: Install dependencies
-    run: |
-      python -m pip install --upgrade pip
-      pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-  # Removed the M3U fetching and modification steps
+      # Removed the M3U fetching and modification steps
 
-  - name: Run EPG generation script
-    run: python generate_epg.py # This creates epg.xml in the workspace
+      - name: Run EPG generation script
+        run: python generate_epg.py # This creates epg.xml in the workspace
 
-  # Commit ONLY the epg.xml file if it has changed
-  - name: Commit and push epg.xml
-    uses: stefanzweifel/git-auto-commit-action@v5
-    with:
-      commit_message: "Automated EPG update" # Commit message reflects only EPG
-      file_pattern: "epg.xml" # Only track changes to epg.xml
-      commit_user_name: "GitHub Actions Bot"
-      commit_user_email: "github-actions[bot]@users.noreply.github.com"
-      commit_author: "GitHub Actions Bot <github-actions[bot]@users.noreply.github.com>"
+      # Commit ONLY the epg.xml file if it has changed
+      - name: Commit and push epg.xml
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated EPG update" # Commit message reflects only EPG
+          file_pattern: "epg.xml" # Only track changes to epg.xml
+          commit_user_name: "GitHub Actions Bot"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "GitHub Actions Bot <github-actions[bot]@users.noreply.github.com>"
