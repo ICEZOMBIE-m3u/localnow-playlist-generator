@@ -1,3 +1,5 @@
+* LOCALNOW CHANNELS WITH WORKING EPG
+
 - M3U Playlist URL:
 [https://www.apsattv.com/localnow.m3u](https://www.apsattv.com/localnow.m3u)
 
