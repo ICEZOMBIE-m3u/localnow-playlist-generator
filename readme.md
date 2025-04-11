@@ -5,3 +5,5 @@
 
 - EPG XML URL:
 [https://raw.githubusercontent.com/BuddyChewChew/localnow-playlist-generator/refs/heads/main/epg.xml](https://raw.githubusercontent.com/BuddyChewChew/localnow-playlist-generator/refs/heads/main/epg.xml)
+
+![Screenshot](https://github.com/BuddyChewChew/localnow-playlist-generator/blob/main/Screenshot%202025-04-11%20012429.jpg)
