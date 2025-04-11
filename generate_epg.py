@@ -20,7 +20,6 @@ USER_AGENT = (
 def unix_to_xmltv(timestamp):
     """Converts a Unix timestamp (seconds since epoch) to XMLTV UTC format."""
     try:
-        # Assume timestamp is integer seconds; handle potential float/string input
         dt_object = datetime.utcfromtimestamp(int(float(timestamp)))
         return dt_object.strftime('%Y%m%d%H%M%S') + " +0000"
     except (ValueError, TypeError, OverflowError) as e:
@@ -34,7 +33,6 @@ def create_xmltv(data):
         return None
 
     tv = ET.Element("tv")
-    # Add generator info attribute (optional but good practice for XMLTV)
     tv.set("generator-info-name", "GitHub Actions EPG Generator")
     tv.set("generator-info-url", "https://github.com/features/actions")
 
@@ -46,12 +44,15 @@ def create_xmltv(data):
             logging.warning(f"Skipping invalid channel entry: {channel}")
             continue
 
-        channel_id = str(channel["_id"]) # Ensure ID is string
-        channel_name = channel.get("name", "Unknown Channel") # Default if name is missing
+        # *** FIX: Add the 'LN_' prefix to match the M3U tvg-id ***
+        channel_id = "LN_" + str(channel["_id"])
+        # *** End FIX ***
 
+        channel_name = channel.get("name", "Unknown Channel")
+
+        # Use the modified channel_id here
         channel_elem = ET.SubElement(tv, "channel", id=channel_id)
         ET.SubElement(channel_elem, "display-name").text = channel_name
-        # You could add <icon src="..."/> here if channel icons are available in the data
         channel_count += 1
 
         programs = channel.get("program", [])
@@ -64,7 +65,6 @@ def create_xmltv(data):
                 logging.warning(f"Skipping invalid program entry for channel '{channel_name}' ({channel_id}): {program}")
                 continue
 
-            # Check essential program keys
             start_ts = program.get("starts_at")
             end_ts = program.get("ends_at")
             title = program.get("program_title")
@@ -80,11 +80,11 @@ def create_xmltv(data):
                 logging.warning(f"Skipping program due to timestamp conversion error for channel '{channel_name}' ({channel_id}): {program}")
                 continue
 
-            # Basic sanity check: start time should be before end time
             if start_ts >= end_ts:
                  logging.warning(f"Skipping program with start time >= end time for channel '{channel_name}' ({channel_id}): {program}")
                  continue
 
+            # Use the modified channel_id here as well
             prog_elem = ET.SubElement(
                 tv,
                 "programme",
@@ -94,15 +94,9 @@ def create_xmltv(data):
             )
             ET.SubElement(prog_elem, "title", lang="en").text = str(title)
 
-            # Add description if available and not empty
             description = program.get("program_description")
             if description and str(description).strip():
                 ET.SubElement(prog_elem, "desc", lang="en").text = str(description)
-
-            # Add other potential fields if needed (e.g., category, episode-num)
-            # episode_num = program.get("episode_number")
-            # if episode_num:
-            #    ET.SubElement(prog_elem, "episode-num", system="onscreen").text = str(episode_num)
 
             program_count += 1
 
@@ -117,13 +111,12 @@ def create_xmltv(data):
 def save_xmltv_file(filename, xml_tree):
     """Saves the XMLTV ElementTree to a file."""
     try:
-        # Use indent for basic pretty printing (optional but readable)
         ET.indent(xml_tree, space="  ", level=0)
         xml_tree.write(filename, encoding='UTF-8', xml_declaration=True)
         logging.info(f"Successfully wrote XMLTV data to {filename}")
     except IOError as e:
         logging.error(f"Error writing XML file '{filename}': {e}")
-        sys.exit(1) # Exit if we can't write the file
+        sys.exit(1)
     except Exception as e:
         logging.error(f"An unexpected error occurred during XML writing: {e}")
         sys.exit(1)
@@ -137,20 +130,19 @@ def main():
 
     logging.info(f"Fetching EPG data from {API_URL}")
     try:
-        response = requests.get(API_URL, headers=headers, timeout=45) # Increased timeout
-        response.raise_for_status() # Raises HTTPError for bad responses (4xx or 5xx)
+        response = requests.get(API_URL, headers=headers, timeout=45)
+        response.raise_for_status()
 
     except requests.exceptions.RequestException as e:
         logging.error(f"Failed to fetch EPG data: {e}")
-        sys.exit(1) # Exit if fetching fails
+        sys.exit(1)
 
     logging.info(f"Successfully fetched EPG data (Status: {response.status_code})")
 
     try:
         data = response.json()
-    except ValueError as e: # Specific exception for JSON decoding
+    except ValueError as e:
         logging.error(f"Error decoding EPG JSON response: {e}")
-        # Log beginning of response text for debugging, careful with potentially large responses
         logging.debug(f"Response text (first 500 chars): {response.text[:500]}...")
         sys.exit(1)
 
