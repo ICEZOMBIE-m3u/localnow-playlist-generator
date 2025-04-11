@@ -1,0 +1,112 @@
+name: Fetch M3U, Generate EPG, Update Playlist
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+  # Runs on a schedule (every day at 4:00 AM UTC)
+  # You can adjust the cron schedule: https://crontab.guru/
+  schedule:
+    - cron: '0 4 * * *'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build-playlist"
+  build-playlist:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Grant GITHUB_TOKEN the permissions required to make a commit
+    permissions:
+      contents: write
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      # Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # Or your preferred Python version
+          cache: 'pip' # Cache pip dependencies
+
+      # Install Python dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Fetch the remote M3U file
+      - name: Fetch remote M3U file
+        id: fetch_m3u
+        run: |
+          M3U_URL="https://www.apsattv.com/localnow.m3u"
+          # Define the filename it will have in the workspace/repo
+          OUTPUT_M3U="playlist.m3u"
+          echo "Fetching M3U from $M3U_URL"
+          # Use curl: -L follows redirects, -f fails silently on server errors (so the script can exit), -o saves to file
+          # Add timeout and retry mechanism for robustness
+          curl -Lf --retry 3 --retry-delay 5 -o "$OUTPUT_M3U" "$M3U_URL" || { echo "::error::Failed to download M3U file from $M3U_URL after retries."; exit 1; }
+
+          echo "M3U file saved as $OUTPUT_M3U"
+          # Verify the first line looks like an M3U header - crucial for the next step
+          if ! head -n 1 "$OUTPUT_M3U" | grep -q "^#EXTM3U"; then
+            echo "::error::Downloaded file $OUTPUT_M3U does not start with #EXTM3U. Cannot proceed reliably."
+            exit 1
+          fi
+          # Make the filename available to other steps
+          echo "m3u_filename=$OUTPUT_M3U" >> $GITHUB_OUTPUT
+
+      # Run the Python script to generate epg.xml
+      - name: Run EPG generation script
+        run: python generate_epg.py
+
+      # Determine the URL where epg.xml will be accessible
+      - name: Determine EPG URL
+        id: epg_url
+        run: |
+          # Using Raw GitHub Content URL (simplest, works immediately)
+          # Determines branch dynamically, defaults to 'main' if detection fails
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          if [[ -z "$BRANCH_NAME" ]]; then
+             # GITHUB_BASE_REF is set for pull requests
+             # GITHUB_HEAD_REF is the branch name in PRs from forks
+             BRANCH_NAME=${GITHUB_BASE_REF:-${GITHUB_HEAD_REF:-main}}
+          fi
+          # Ensure branch name is URL-safe (though usually not needed for standard branch names)
+          BRANCH_NAME=$(echo "$BRANCH_NAME" | sed 's / %2F /g')
+          RAW_URL="https://raw.githubusercontent.com/${{ github.repository }}/$BRANCH_NAME/epg.xml"
+          echo "Determined EPG URL: $RAW_URL"
+          # Make the URL available to other steps
+          echo "epg_file_url=$RAW_URL" >> $GITHUB_OUTPUT
+
+      # Modify the downloaded M3U file to include the EPG URL
+      - name: Update fetched M3U file with EPG URL
+        run: |
+          M3U_FILE="${{ steps.fetch_m3u.outputs.m3u_filename }}"
+          EPG_URL="${{ steps.epg_url.outputs.epg_file_url }}"
+
+          echo "Updating $M3U_FILE with EPG URL: $EPG_URL"
+          # Use sed to replace the first line. -i modifies the file directly.
+          # Use | as delimiter for sed because URL contains /
+          # Ensure we only modify lines starting with #EXTM3U to be safer
+          sed -i '1s|^#EXTM3U.*|#EXTM3U tvg-url="'"$EPG_URL"'"|' "$M3U_FILE"
+
+          echo "First line of $M3U_FILE after update:"
+          head -n 1 "$M3U_FILE"
+
+      # Commit both the generated epg.xml and the modified playlist.m3u
+      - name: Commit and push updated files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated EPG generation and M3U update"
+          # Specify both files. Use the output from the fetch step for the M3U filename.
+          file_pattern: "epg.xml ${{ steps.fetch_m3u.outputs.m3u_filename }}"
+          commit_user_name: "GitHub Actions Bot" # Default is github-actions[bot]
+          commit_user_email: "github-actions[bot]@users.noreply.github.com" # Default
+          commit_author: "GitHub Actions Bot <github-actions[bot]@users.noreply.github.com>" # Default
+          push_options: '--force' # Optional: Use if you ever need to overwrite history (usually not needed)
