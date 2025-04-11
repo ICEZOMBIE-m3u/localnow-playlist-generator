@@ -1015,10 +1015,6 @@
   <channel id="E1323824-8949-45C5-B8B9-DF36E8B84232">
     <display-name>Urban Action Channel</display-name>
   </channel>
-  <programme start="20250411020700 +0000" stop="20250411040500 +0000" channel="E1323824-8949-45C5-B8B9-DF36E8B84232">
-    <title lang="en">Black Fist</title>
-    <desc lang="en">Urban Action Channel</desc>
-  </programme>
   <programme start="20250411040500 +0000" stop="20250411052600 +0000" channel="E1323824-8949-45C5-B8B9-DF36E8B84232">
     <title lang="en">Look_Out_Sister_1947</title>
     <desc lang="en">Urban Action Channel</desc>
@@ -1033,6 +1029,10 @@
   </programme>
   <programme start="20250411084500 +0000" stop="20250411103600 +0000" channel="E1323824-8949-45C5-B8B9-DF36E8B84232">
     <title lang="en">Tattoo Connection</title>
+    <desc lang="en">Urban Action Channel</desc>
+  </programme>
+  <programme start="20250411103600 +0000" stop="20250411114700 +0000" channel="E1323824-8949-45C5-B8B9-DF36E8B84232">
+    <title lang="en">Harlem_Rides_The_Range_1939</title>
     <desc lang="en">Urban Action Channel</desc>
   </programme>
   <channel id="9DA67180-77F0-4AAA-A1C4-148BEBA5BD25">
@@ -1268,10 +1268,6 @@
   <channel id="27B297E5-83A0-457F-B9EC-33C5A020F040">
     <display-name>FailArmy</display-name>
   </channel>
-  <programme start="20250411033400 +0000" stop="20250411040400 +0000" channel="27B297E5-83A0-457F-B9EC-33C5A020F040">
-    <title lang="en">FAILARMY</title>
-    <desc lang="en">Videos of frantic and spectacular fails from around the world.</desc>
-  </programme>
   <programme start="20250411040400 +0000" stop="20250411043600 +0000" channel="27B297E5-83A0-457F-B9EC-33C5A020F040">
     <title lang="en">FailArmy Now</title>
     <desc lang="en">Boats, friends, and highways.</desc>
@@ -1287,6 +1283,10 @@
   <programme start="20250411053900 +0000" stop="20250411061000 +0000" channel="27B297E5-83A0-457F-B9EC-33C5A020F040">
     <title lang="en">FailArmy Now</title>
     <desc lang="en">Blondes, Japan, and gyms.</desc>
+  </programme>
+  <programme start="20250411061000 +0000" stop="20250411064200 +0000" channel="27B297E5-83A0-457F-B9EC-33C5A020F040">
+    <title lang="en">Best Fails of the Month</title>
+    <desc lang="en">The best of the worst for April 2020.</desc>
   </programme>
   <channel id="397AAFA3-4393-4856-BB05-9CEF9637CFEB">
     <display-name>Just For Laughs</display-name>
@@ -1682,10 +1682,6 @@
   <channel id="98BB142C-3E04-4D9C-924F-A4DAD0410741">
     <display-name>Cosmic Frontiers</display-name>
   </channel>
-  <programme start="20250411030009 +0000" stop="20250411040506 +0000" channel="98BB142C-3E04-4D9C-924F-A4DAD0410741">
-    <title lang="en">Disaster Diaries</title>
-    <desc lang="en">2015 was marked by many exceptional natural disasters. Is this the result of global warming?</desc>
-  </programme>
   <programme start="20250411040506 +0000" stop="20250411050927 +0000" channel="98BB142C-3E04-4D9C-924F-A4DAD0410741">
     <title lang="en">Disaster Diaries</title>
     <desc lang="en">2016 marked the end of one of the strongest events ever recorded.</desc>
@@ -1701,6 +1697,10 @@
   <programme start="20250411071851 +0000" stop="20250411082203 +0000" channel="98BB142C-3E04-4D9C-924F-A4DAD0410741">
     <title lang="en">Asteroids: A New Horizon</title>
     <desc lang="en">Top space resource companies all vie for competitive advantage. The new space race is just getting started.</desc>
+  </programme>
+  <programme start="20250411082203 +0000" stop="20250411085252 +0000" channel="98BB142C-3E04-4D9C-924F-A4DAD0410741">
+    <title lang="en">Disasters in Space</title>
+    <desc lang="en">Despite multiple pressures, a shocking discovery causes NASA to cancel a historic launch.</desc>
   </programme>
   <channel id="2E0F834A-CF0B-42E0-84A1-66BF67ADDE58">
     <display-name>DECLASSIFIED</display-name>
@@ -2418,10 +2418,6 @@
   <channel id="803D1BB4-9C6B-4562-B71F-E58FB556F44B">
     <display-name>Beyond Paranormal</display-name>
   </channel>
-  <programme start="20250411023400 +0000" stop="20250411040400 +0000" channel="803D1BB4-9C6B-4562-B71F-E58FB556F44B">
-    <title lang="en">Dark Echoes Paranormal</title>
-    <desc lang="en">Dark Echoes Paranormal investigates Twisted Vines restaurant in Derby, CT, with medium Shannon Collins. They encounter eerie whispers, unexplained footsteps, and capture EVPs. Spirits are present, seeking attention, not harm. Tune in to see if the rest...</desc>
-  </programme>
   <programme start="20250411040400 +0000" stop="20250411050400 +0000" channel="803D1BB4-9C6B-4562-B71F-E58FB556F44B">
     <title lang="en">A Haunting</title>
     <desc lang="en">Between the world we see and the things we fear…There are doors. When they are opened...Nightmares become reality. These are the true stories of the innocent and the unimaginable.</desc>
@@ -2437,6 +2433,10 @@
   <programme start="20250411063500 +0000" stop="20250411080500 +0000" channel="803D1BB4-9C6B-4562-B71F-E58FB556F44B">
     <title lang="en">Dark Echoes Paranormal</title>
     <desc lang="en">Dark Echoes Paranormal investigates Twisted Vines restaurant in Derby, CT, with medium Shannon Collins. They encounter eerie whispers, unexplained footsteps, and capture EVPs. Spirits are present, seeking attention, not harm. Tune in to see if the rest...</desc>
+  </programme>
+  <programme start="20250411080500 +0000" stop="20250411090500 +0000" channel="803D1BB4-9C6B-4562-B71F-E58FB556F44B">
+    <title lang="en">A Haunting</title>
+    <desc lang="en">Between the world we see and the things we fear…There are doors. When they are opened...Nightmares become reality. These are the true stories of the innocent and the unimaginable.</desc>
   </programme>
   <channel id="15F7FB08-92A3-4376-9096-28697AC18E2F">
     <display-name>NBC LX Home</display-name>
@@ -2556,11 +2556,6 @@
   <channel id="6A74461E-0CCC-4C72-BCAF-DF29A560E40A">
     <display-name>Smart Healthy Green Living.</display-name>
   </channel>
-  <programme start="20250411033428 +0000" stop="20250411040710 +0000" channel="6A74461E-0CCC-4C72-BCAF-DF29A560E40A">
-    <title lang="en">Hotels ByDesign</title>
-    <desc lang="en">In this episode, Mike indulges in the deep bohemian roots of Alila Ventana Big Sur in California, Architect Richard Riveire shows us around his latest project – a Viking Cruise Ship, Scott takes us to Newport, Rhode Island to explore the Hammetts Hotel, Mike explores a unique regional Massachusetts offering of The Porches Inn at MASS MoCA, and we head to Southern California to look at two hotels next to each other - Mission Pacific Hotel &amp; The Seabird Resort. 
-</desc>
-  </programme>
   <programme start="20250411040710 +0000" stop="20250411043040 +0000" channel="6A74461E-0CCC-4C72-BCAF-DF29A560E40A">
     <title lang="en">Bring Your Own Tools</title>
     <desc lang="en">This DIY Sod install tutorial is all about how to transform your lawn with sod in just one weekend from start to finish.  This backyard makeover is possible in just a couple of days and this tutorial will guide you to the step by step process on how to make it happen.</desc>
@@ -2576,6 +2571,10 @@
   <programme start="20250411050644 +0000" stop="20250411053255 +0000" channel="6A74461E-0CCC-4C72-BCAF-DF29A560E40A">
     <title lang="en">Australia ByDesign: Interiors</title>
     <desc lang="en">Australia By Design Interiors is back in our search for the best interior design project in the country. In this episode we feature a light and breezy cocktail and rooftop bar in Melbourne and a heritage restoration combining the old with the new in Launceston.</desc>
+  </programme>
+  <programme start="20250411053255 +0000" stop="20250411055945 +0000" channel="6A74461E-0CCC-4C72-BCAF-DF29A560E40A">
+    <title lang="en">Australia ByDesign: Interiors</title>
+    <desc lang="en">In this episode of Australia ByDesign Interiors , we show you how to achieve natural light and openness without going open plan, plus a museum focusing on colonial border customs.</desc>
   </programme>
   <channel id="829B2E23-00D2-4283-ADA0-64A49931C5F0">
     <display-name>Love Stories TV</display-name>
@@ -2603,10 +2602,6 @@
   <channel id="D5C1BF5E-4AA7-46FE-AB62-1F04C5607C51">
     <display-name>Homeful</display-name>
   </channel>
-  <programme start="20250411031136 +0000" stop="20250411040716 +0000" channel="D5C1BF5E-4AA7-46FE-AB62-1F04C5607C51">
-    <title lang="en">Backroad Bounty</title>
-    <desc lang="en">Dive into 60 years’ worth of vintage valuables and visit a favourite collector.</desc>
-  </programme>
   <programme start="20250411040716 +0000" stop="20250411050320 +0000" channel="D5C1BF5E-4AA7-46FE-AB62-1F04C5607C51">
     <title lang="en">Holmes on Homes</title>
     <desc lang="en">Spot shoddy railings and odd plumbing that left a lake house owner high and dry.</desc>
@@ -2622,6 +2617,10 @@
   <programme start="20250411065529 +0000" stop="20250411075134 +0000" channel="D5C1BF5E-4AA7-46FE-AB62-1F04C5607C51">
     <title lang="en">Holmes on Homes</title>
     <desc lang="en">Keep the faith as Mike fixes a $30K bathroom reno that became an unholy mess.</desc>
+  </programme>
+  <programme start="20250411075134 +0000" stop="20250411084738 +0000" channel="D5C1BF5E-4AA7-46FE-AB62-1F04C5607C51">
+    <title lang="en">Holmes on Homes</title>
+    <desc lang="en">Peep behind the camera for insights into how each episode of the show is made.</desc>
   </programme>
   <channel id="65A8075F-6E33-489C-9EA5-BC969730DF27">
     <display-name>Tastemade Home</display-name>
@@ -3109,10 +3108,6 @@
   <channel id="600378AB-319C-4603-AA65-DD647279C634">
     <display-name>Love Nature</display-name>
   </channel>
-  <programme start="20250411030226 +0000" stop="20250411040418 +0000" channel="600378AB-319C-4603-AA65-DD647279C634">
-    <title lang="en">The Canary Islands</title>
-    <desc lang="en">Get a crash course in survival amidst the islands’ unforgiving landscapes.</desc>
-  </programme>
   <programme start="20250411040418 +0000" stop="20250411050231 +0000" channel="600378AB-319C-4603-AA65-DD647279C634">
     <title lang="en">Land Of Gremlins</title>
     <desc lang="en">See how these endangered primates survive against all odds in a rapidly shrinking habitat.</desc>
@@ -3128,6 +3123,10 @@
   <programme start="20250411070150 +0000" stop="20250411080000 +0000" channel="600378AB-319C-4603-AA65-DD647279C634">
     <title lang="en">Land Of Gremlins</title>
     <desc lang="en">See how Madagascar’s diverse landscapes influence plant and animal evolution.</desc>
+  </programme>
+  <programme start="20250411080000 +0000" stop="20250411085937 +0000" channel="600378AB-319C-4603-AA65-DD647279C634">
+    <title lang="en">Secret Life Of The Wombat</title>
+    <desc lang="en">Near Australia’s Snowy Mountains are a hundred burrows known as Wombat Wood.</desc>
   </programme>
   <channel id="AAC2601B-F7F7-49B1-9E62-DFE3E0EA7990">
     <display-name>Xploration Station</display-name>
@@ -3668,12 +3667,6 @@ Part of the Locked on Podcast Network. #NFL #NFLDraft</desc>
   <channel id="0809C39C-DE1C-464C-ACA0-87DF90E1DD17">
     <display-name>Locked On Sports Los Angeles</display-name>
   </channel>
-  <programme start="20250411033400 +0000" stop="20250411040800 +0000" channel="0809C39C-DE1C-464C-ACA0-87DF90E1DD17">
-    <title lang="en">Locked On Chargers</title>
-    <desc lang="en">Hosts Daniel Wade and David Droegemeier bring the perfect blend of humor and analysis of one of the NFL&amp;apos;s unluckiest teams.
-
-Part of the Locked On Podcast Network.</desc>
-  </programme>
   <programme start="20250411040800 +0000" stop="20250411044200 +0000" channel="0809C39C-DE1C-464C-ACA0-87DF90E1DD17">
     <title lang="en">Locked On NFL Scouting</title>
     <desc lang="en">NFL experts Kyle Crabbs (@GrindingTheTape) and Joe Marino (@TheJoeMarino) break down professional and college scouting, roster construction, team building, salary cap management, and much more. 
@@ -3697,6 +3690,12 @@ Part of the Locked On Podcast Network.</desc>
     <desc lang="en">Locked On College Football Podcast is your essential daily podcast for staying ahead in the world of college football. Hosted by the insightful D1 college play-by-play announcer Spencer McLaughlin, the Locked On College Football Podcast brings you the latest news, analysis, and insider information that every college football fan craves. From in-depth coverage of realignment and the transfer portal to QB battles and beyond, Spencer keeps you updated on the biggest college football stories from every corner of the country.
 
 Part of the Locked On Podcast Network. Your Team. Every Day.</desc>
+  </programme>
+  <programme start="20250411062400 +0000" stop="20250411065800 +0000" channel="0809C39C-DE1C-464C-ACA0-87DF90E1DD17">
+    <title lang="en">Locked On USC</title>
+    <desc lang="en">Locked On USC is a show for the Trojan family hosted by Marc Kulkin, a columnist for WeAreSC.com. Five times a week for 30 minutes, Locked On USC covers USC Athletics when no one else does. 
+
+Part of the Locked On Podcast Network.</desc>
   </programme>
   <channel id="7E406717-E0E8-4975-8B16-7AEBC336C650">
     <display-name>Strongman Champions Network</display-name>
@@ -4023,10 +4022,6 @@ Part of the Locked On Podcast Network. Your Team. Every Day.</desc>
   <channel id="FF2B48B0-01BD-40E4-A900-5D02739CA9FD">
     <display-name>Surfer</display-name>
   </channel>
-  <programme start="20250411030312 +0000" stop="20250411040610 +0000" channel="FF2B48B0-01BD-40E4-A900-5D02739CA9FD">
-    <title lang="en">Whistle of Wilderness</title>
-    <desc lang="en">Whistle of Wilderness follows a young islander's journey through nature, mind, and life.</desc>
-  </programme>
   <programme start="20250411040610 +0000" stop="20250411053107 +0000" channel="FF2B48B0-01BD-40E4-A900-5D02739CA9FD">
     <title lang="en">Ground Swell: Epic Stories of Monster Waves</title>
     <desc lang="en">Showcasing the most famous big wave spots on the planet and the surfers who tackled them.</desc>
@@ -4042,6 +4037,10 @@ Part of the Locked On Podcast Network. Your Team. Every Day.</desc>
   <programme start="20250411080341 +0000" stop="20250411091629 +0000" channel="FF2B48B0-01BD-40E4-A900-5D02739CA9FD">
     <title lang="en">Paradigm Lost</title>
     <desc lang="en">Filmed over three years, in six countries, Paradigm Lost captures the highest level of water sports action in beautiful 4K. In between the action are heartfelt stories of the characters at the top of their sports.</desc>
+  </programme>
+  <programme start="20250411091629 +0000" stop="20250411105432 +0000" channel="FF2B48B0-01BD-40E4-A900-5D02739CA9FD">
+    <title lang="en">SURFER Big Wave Challenge 2024</title>
+    <desc lang="en">The Surfer Big Wave Challenge aware show filmed live in Nazaré, Portugal. The show will present $150,000 in awards for men and women for categories including Surfer of the Year, Biggest Ride, Best Paddle in the Wave and Wipeout of the Year.</desc>
   </programme>
   <channel id="0F08B6CD-FB0A-4FF0-8792-DE81A8AAF14D">
     <display-name>World of Freesports</display-name>
