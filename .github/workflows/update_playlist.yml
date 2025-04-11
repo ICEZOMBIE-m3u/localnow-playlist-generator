@@ -25,30 +25,42 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # *** Added User-Agent to curl ***
+      # *** Enhanced Fetch Step ***
       - name: Fetch remote M3U file
         id: fetch_m3u
         run: |
           M3U_URL="https://www.apsattv.com/localnow.m3u"
           OUTPUT_M3U="playlist.m3u"
-          # Use a common browser User-Agent
           FETCH_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 
           echo "Fetching M3U from $M3U_URL"
-          # Use curl: -A specifies User-Agent, -L follows redirects, -f fails silently on server errors, -o saves to file
-          curl -A "$FETCH_USER_AGENT" -Lf --retry 3 --retry-delay 5 -o "$OUTPUT_M3U" "$M3U_URL" || { echo "::error::Failed to download M3U file from $M3U_URL after retries."; exit 1; }
+          # Use curl: -A User-Agent, -L follows redirects, -f fails silently on server errors, -s silent progress, -o saves to file
+          # We capture the exit code ($?) immediately after curl runs.
+          curl -A "$FETCH_USER_AGENT" -Lfs -o "$OUTPUT_M3U" "$M3U_URL"
+          CURL_EXIT_CODE=$?
 
-          echo "M3U file saved as $OUTPUT_M3U"
-          # Verify it looks like a valid M3U and not HTML before proceeding
-          # Checking for #EXTINF is a bit more robust than just #EXTM3U
+          # Check if curl command failed (non-zero exit code)
+          if [[ $CURL_EXIT_CODE -ne 0 ]]; then
+            echo "::error::curl command failed with exit code $CURL_EXIT_CODE when fetching $M3U_URL"
+            # Attempt to show the invalid downloaded content if any
+            if [[ -f "$OUTPUT_M3U" ]]; then
+               echo "--- Start of potentially invalid downloaded file ---"
+               head "$OUTPUT_M3U"
+               echo "--- End of head ---"
+            fi
+            exit 1
+          fi
+
+          # Check if the downloaded file actually contains playlist entries
           if ! grep -q '#EXTINF' "$OUTPUT_M3U"; then
             echo "::error::Downloaded file $OUTPUT_M3U does not appear to be a valid M3U playlist (missing #EXTINF tags)."
-            # Optional: Show the start of the invalid file for debugging
             echo "--- Start of downloaded file ---"
             head "$OUTPUT_M3U"
             echo "--- End of head ---"
             exit 1
           fi
+
+          echo "M3U file fetched successfully and saved as $OUTPUT_M3U"
           echo "m3u_filename=$OUTPUT_M3U" >> $GITHUB_OUTPUT
 
       - name: Run EPG generation script
