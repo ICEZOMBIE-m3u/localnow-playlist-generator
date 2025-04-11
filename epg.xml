@@ -1153,10 +1153,6 @@
   <channel id="A4FD5AD3-49BC-488A-AA00-4C51532E9ECC">
     <display-name>Comedy Dynamics</display-name>
   </channel>
-  <programme start="20250411023538 +0000" stop="20250411040944 +0000" channel="A4FD5AD3-49BC-488A-AA00-4C51532E9ECC">
-    <title lang="en">Jeff Dunham: Spark of Insanity</title>
-    <desc lang="en">Jeff Dunham and his socially reckless suitcase posse are back in this highly anticipated follow-up to Jeff.</desc>
-  </programme>
   <programme start="20250411040944 +0000" stop="20250411053448 +0000" channel="A4FD5AD3-49BC-488A-AA00-4C51532E9ECC">
     <title lang="en">Jeff Dunham: Unhinged In Hollywood</title>
     <desc lang="en">Jeff Dunham stars in this special from the world famous Dolby Theatre in Hollywood.</desc>
@@ -1172,6 +1168,10 @@
   <programme start="20250411090433 +0000" stop="20250411105257 +0000" channel="A4FD5AD3-49BC-488A-AA00-4C51532E9ECC">
     <title lang="en">Keep Your Distance Vol 16</title>
     <desc lang="en">Keep Your Distance is a comedy showcase hosted by comedian KevOnStage.</desc>
+  </programme>
+  <programme start="20250411105257 +0000" stop="20250411122719 +0000" channel="A4FD5AD3-49BC-488A-AA00-4C51532E9ECC">
+    <title lang="en">Bryan Callen: Man Class</title>
+    <desc lang="en">Bryan Callen gives his unique take on how to be a real man in modern society.</desc>
   </programme>
   <channel id="5EEC076F-D640-49C0-A621-09A30D247889">
     <display-name>Always Funny</display-name>
@@ -2188,10 +2188,6 @@
   <channel id="8182FC5A-C716-40EF-86BB-9A5F84AED954">
     <display-name>Joel Osteen Network</display-name>
   </channel>
-  <programme start="20250411033741 +0000" stop="20250411041012 +0000" channel="8182FC5A-C716-40EF-86BB-9A5F84AED954">
-    <title lang="en">Blessed In The Dark Places</title>
-    <desc lang="en">God can use difficult seasons to take you to new levels. He knows how to turn the trial to your advantage.</desc>
-  </programme>
   <programme start="20250411041012 +0000" stop="20250411044308 +0000" channel="8182FC5A-C716-40EF-86BB-9A5F84AED954">
     <title lang="en">Living Joyful</title>
     <desc lang="en">Feeling weighed down by life&amp;apos;s pressures? Remember, you can access God&amp;apos;s joy no matter your circumstances!</desc>
@@ -2207,6 +2203,10 @@
   <programme start="20250411054723 +0000" stop="20250411062051 +0000" channel="8182FC5A-C716-40EF-86BB-9A5F84AED954">
     <title lang="en">You&amp;apos;re Still Going To Get There</title>
     <desc lang="en">We all face disqualifying seasons. Stir your faith; God sees you and is working to bring you out stronger!</desc>
+  </programme>
+  <programme start="20250411062051 +0000" stop="20250411065348 +0000" channel="8182FC5A-C716-40EF-86BB-9A5F84AED954">
+    <title lang="en">Unconditional Trust</title>
+    <desc lang="en">Faith is trusting God when things go wrong. He&amp;apos;ll bring good from your situation. Trust Him always!</desc>
   </programme>
   <channel id="3BB1C077-3B27-4172-A3BB-BE577D88A3D0">
     <display-name>JLTV</display-name>
@@ -2487,10 +2487,6 @@
   <channel id="64794595-37F9-4BC8-AA16-3C4F66E6E365">
     <display-name>PBS Food</display-name>
   </channel>
-  <programme start="20250411034122 +0000" stop="20250411041016 +0000" channel="64794595-37F9-4BC8-AA16-3C4F66E6E365">
-    <title lang="en">Essential Pépin</title>
-    <desc lang="en">Jacques honors his roots with recipes reflecting his U.S., French and Puerto Rican family.</desc>
-  </programme>
   <programme start="20250411041016 +0000" stop="20250411043834 +0000" channel="64794595-37F9-4BC8-AA16-3C4F66E6E365">
     <title lang="en">Simply Ming</title>
     <desc lang="en">Michael Schlow prepares an Italian Spicy Seafood Stew. Ming cook Thai Seafood Stew.</desc>
@@ -2506,6 +2502,10 @@
   <programme start="20250411053325 +0000" stop="20250411060143 +0000" channel="64794595-37F9-4BC8-AA16-3C4F66E6E365">
     <title lang="en">Simply Ming</title>
     <desc lang="en">Ming runs into friends at the Hawai’i Food and Wine Festival: Roy Yamaguchi and Alan Wong.</desc>
+  </programme>
+  <programme start="20250411060143 +0000" stop="20250411070410 +0000" channel="64794595-37F9-4BC8-AA16-3C4F66E6E365">
+    <title lang="en">I'll Have What Phil's Having</title>
+    <desc lang="en">Indulge in the finest sweets Paris has to offer as Phil explores the City of Lights.</desc>
   </programme>
   <channel id="1ED68EF2-04A4-4CAD-A126-2F24A4669BBE">
     <display-name>Cooking Panda</display-name>
@@ -3200,23 +3200,6 @@
   <channel id="E8E1D8F4-58AF-488E-A79B-9A87C2003666">
     <display-name>Carbon TV</display-name>
   </channel>
-  <programme start="20250411040053 +0000" stop="20250411041041 +0000" channel="E8E1D8F4-58AF-488E-A79B-9A87C2003666">
-    <title lang="en">Wild Venison Philly Cheesesteak with The Outdoors Chef</title>
-    <desc lang="en">Wild Venison Philly Cheesesteak with The Outdoors Chef
-
-The Outdoors Chef is a Wild to Table Series about a Family of Chefs with a passion for Freedom, a thirst for Adventure, and a hunger for all things Wild! Watch as professional chefs Grow, Raise, Angle, Hunt, Cook, and Store wild recipes at Camp, in the Kitchen, and from the Farm. It's Wild to Table sharing our Heritage by Angling, Hunting, Cooking, and Storing Wild Game.  
-
-THE OUTDOORS CHEF
-Grow-Raise-Angle-Hunt-Cook-Store Wild Recipes 
-#OutdoorsChefLife #SureFireRecipes #WildGameWednesday #WildtoTable #OutdoorsEducation #OutdoorsIQ
-
-LET'S CONNECT!
-
-THE OUTDOORS CHEF
-Facebook https://www.facebook.com/TheOutdoorsChef
-Instagram https://www.instagram.com/theoutdoorschef
-Twitter https://twitter.com/TheOutdoorsChef</desc>
-  </programme>
   <programme start="20250411041041 +0000" stop="20250411041845 +0000" channel="E8E1D8F4-58AF-488E-A79B-9A87C2003666">
     <title lang="en">Wild Rabbit Stew and Dumplings with The Outdoors Chef</title>
     <desc lang="en">Wild Rabbit Stew and Dumplings with The Outdoors Chef
@@ -3285,6 +3268,23 @@ Facebook https://www.facebook.com/TheOutdoorsChef
 Instagram https://www.instagram.com/theoutdoorschef
 Twitter https://twitter.com/TheOutdoorsChef</desc>
   </programme>
+  <programme start="20250411044400 +0000" stop="20250411045120 +0000" channel="E8E1D8F4-58AF-488E-A79B-9A87C2003666">
+    <title lang="en">Poached Northern Splake and Wild Rice with The Outdoors Chef</title>
+    <desc lang="en">Poached Northern Splake and Wild Rice with The Outdoors Chef
+
+The Outdoors Chef is a Wild to Table Series about a Family of Chefs with a passion for Freedom, a thirst for Adventure, and a hunger for all things Wild! Watch as professional chefs Grow, Raise, Angle, Hunt, Cook, and Store wild recipes at Camp, in the Kitchen, and from the Farm. It's Wild to Table sharing our Heritage by Angling, Hunting, Cooking, and Storing Wild Game.  
+
+THE OUTDOORS CHEF
+Grow-Raise-Angle-Hunt-Cook-Store Wild Recipes 
+#OutdoorsChefLife #SureFireRecipes #WildGameWednesday #WildtoTable #OutdoorsEducation #OutdoorsIQ
+
+LET'S CONNECT!
+
+THE OUTDOORS CHEF
+Facebook https://www.facebook.com/TheOutdoorsC...
+Instagram https://www.instagram.com/theoutdoors...
+Twitter https://twitter.com/TheOutdoorsChef</desc>
+  </programme>
   <channel id="91FC1DC5-E691-4ACC-811C-F3B6F70F2A9C">
     <display-name>Wired2Fish</display-name>
   </channel>
@@ -3334,10 +3334,6 @@ Twitter https://twitter.com/TheOutdoorsChef</desc>
   <channel id="C34083CA-9A5E-4ED4-AB94-61145D1E3496">
     <display-name>Skull Bound TV</display-name>
   </channel>
-  <programme start="20250411034400 +0000" stop="20250411041000 +0000" channel="C34083CA-9A5E-4ED4-AB94-61145D1E3496">
-    <title lang="en">vet_bo reichenbach</title>
-    <desc lang="en">Join host and skull artist Jana Waller as she takes viewers on hunting and fishing adventures across the globe, featuring breathtaking scenery and incredible wildlife.</desc>
-  </programme>
   <programme start="20250411041000 +0000" stop="20250411042500 +0000" channel="C34083CA-9A5E-4ED4-AB94-61145D1E3496">
     <title lang="en">montana mountain time</title>
     <desc lang="en">Join host and skull artist Jana Waller as she takes viewers on hunting and fishing adventures across the globe, featuring breathtaking scenery and incredible wildlife.</desc>
@@ -3352,6 +3348,10 @@ Twitter https://twitter.com/TheOutdoorsChef</desc>
   </programme>
   <programme start="20250411051200 +0000" stop="20250411053600 +0000" channel="C34083CA-9A5E-4ED4-AB94-61145D1E3496">
     <title lang="en">honey hole</title>
+    <desc lang="en">Join host and skull artist Jana Waller as she takes viewers on hunting and fishing adventures across the globe, featuring breathtaking scenery and incredible wildlife.</desc>
+  </programme>
+  <programme start="20250411053600 +0000" stop="20250411055900 +0000" channel="C34083CA-9A5E-4ED4-AB94-61145D1E3496">
+    <title lang="en">Wall Tent Turkeys in The Breaks</title>
     <desc lang="en">Join host and skull artist Jana Waller as she takes viewers on hunting and fishing adventures across the globe, featuring breathtaking scenery and incredible wildlife.</desc>
   </programme>
   <channel id="C4D88AD3-1A17-4840-9319-112DBDEDD9F8">
@@ -3403,10 +3403,6 @@ Twitter https://twitter.com/TheOutdoorsChef</desc>
   <channel id="3E365F9C-E1F6-434F-9C51-0F331DCCBC2C">
     <display-name>NatureStream.TV</display-name>
   </channel>
-  <programme start="20250411015740 +0000" stop="20250411041019 +0000" channel="3E365F9C-E1F6-434F-9C51-0F331DCCBC2C">
-    <title lang="en">Yosemite Waterfalls &amp; Wildflowers</title>
-    <desc lang="en">In the Spring Yosemites spectacular waterfalls combine with an exquisite display of Dogwood blossoms to create an awe inspiring experience like no other. Immerse yourself in the wonders of Yosemite in this 2 hour relaxing nature film "Yosemite, Waterfalls &amp; Wildflowers". The spectacular cinematography is accompanied by a beautiful acoustic guitar soundtrack.</desc>
-  </programme>
   <programme start="20250411041019 +0000" stop="20250411045347 +0000" channel="3E365F9C-E1F6-434F-9C51-0F331DCCBC2C">
     <title lang="en">Autumn Inspiration</title>
     <desc lang="en">Witness the beauty of the autumn seasons around the United States in this 35 minute program. This video showcases the diversity of our countrys spectacular landscapes. Experience changing colors, from the Sierra Nevada Mountains to the Rockies to the Eastern USA. The photography and cinematography of Olof and Elizabeth Carmel is paired with relaxing music to provide an exquisite "ambient art" experience for TV and mobile devices.</desc>
@@ -3422,6 +3418,10 @@ Twitter https://twitter.com/TheOutdoorsChef</desc>
   <programme start="20250411073627 +0000" stop="20250411073939 +0000" channel="3E365F9C-E1F6-434F-9C51-0F331DCCBC2C">
     <title lang="en">Preview for "Winter Wonder, Swiss Alps" Relaxing Nature Film</title>
     <desc lang="en">Journey through breathtaking mountain beauty in the 90 minute long "Winter Wonder, Swiss Alps". Experience sunrise on the Matterhorn, exhilarating aerial views of mountain peaks, and wondrous ice sculptures deep in glacial caves. A tranquil soundtrack accompanies the awe inspiring scenery at "the top of Europe". Available to subscribers of NatureStream.tv</desc>
+  </programme>
+  <programme start="20250411073939 +0000" stop="20250411074229 +0000" channel="3E365F9C-E1F6-434F-9C51-0F331DCCBC2C">
+    <title lang="en">Preview for "Alaska" Art Display Film</title>
+    <desc lang="en">This is a preview for the 1 hour long Art Display Film "Alaska". Journey into  the beautiful wilderness of Alaska through the photography of Olof &amp; Elizabeth Carmel. This art display film showcases their most stunning photographs of Americas last great wilderness - from breaching whales and misty mountains of the Inside Passage to the Grizzlies and soaring peaks of Denali National Park. This 60 minute film will give you new appreciation for the wilderness of the wild North. Accompanied by a beautiful acoustic guitar soundtrack. To see the full film please subscribe to NatureStream.tv Streaming Channel, with free apps for all streaming devices, at www.NatureStream.tv</desc>
   </programme>
   <channel id="5B906B36-29CB-441B-ADCD-921E22A67BDD">
     <display-name>Drone TV</display-name>
@@ -3700,10 +3700,6 @@ Part of the Locked On Podcast Network.</desc>
   <channel id="7E406717-E0E8-4975-8B16-7AEBC336C650">
     <display-name>Strongman Champions Network</display-name>
   </channel>
-  <programme start="20250411030800 +0000" stop="20250411041100 +0000" channel="7E406717-E0E8-4975-8B16-7AEBC336C650">
-    <title lang="en">Strongman Champions League</title>
-    <desc lang="en">The SCL train stopped in Zlatibor for the stage 6 of the MLO SCL. 11 compete for the title in the home country of legendary Ervin Katona.</desc>
-  </programme>
   <programme start="20250411041100 +0000" stop="20250411051400 +0000" channel="7E406717-E0E8-4975-8B16-7AEBC336C650">
     <title lang="en">Strongman Champions League</title>
     <desc lang="en">Bulgaria hosts the next stage of the SCL. Current leader in the World Series is Matjaz Belsak, youngest competitor and strongest man of Slovenia.</desc>
@@ -3719,6 +3715,10 @@ Part of the Locked On Podcast Network.</desc>
   <programme start="20250411071600 +0000" stop="20250411081900 +0000" channel="7E406717-E0E8-4975-8B16-7AEBC336C650">
     <title lang="en">Strongman Champions League</title>
     <desc lang="en">38 athletes compete in the under 90kg and under 105kg SCL World Championships. From each weight class, the top 12 qualify for the finals.</desc>
+  </programme>
+  <programme start="20250411081900 +0000" stop="20250411092200 +0000" channel="7E406717-E0E8-4975-8B16-7AEBC336C650">
+    <title lang="en">Strongman Champions League</title>
+    <desc lang="en">A two day, seven event battle with lots of spectators.</desc>
   </programme>
   <channel id="1EE99DA8-A888-477C-B04A-6936BE0C43E4">
     <display-name>PLL Network</display-name>
@@ -3930,10 +3930,6 @@ Part of the Locked On Podcast Network.</desc>
   <channel id="2395DB05-446E-4365-A77E-C8E65C4E7C2A">
     <display-name>Wrestling Legends Network</display-name>
   </channel>
-  <programme start="20250411031934 +0000" stop="20250411041142 +0000" channel="2395DB05-446E-4365-A77E-C8E65C4E7C2A">
-    <title lang="en">1987 Memphis Arena Show Vol 2</title>
-    <desc lang="en">1987 Wrestling Sports Big Bubba vs Tracy Smothers Jeff Jarrett vs Boy Tony Tommy Rich  Austin Idol Interview</desc>
-  </programme>
   <programme start="20250411041142 +0000" stop="20250411050750 +0000" channel="2395DB05-446E-4365-A77E-C8E65C4E7C2A">
     <title lang="en">1987 Memphis Arena Show Vol 3</title>
     <desc lang="en">1987 Wrestling Sports Alan West vs Goliath Pat Tanaka Interview Downtown Bruno  Boy Tony Interview Pat Tanaka vs Boy Tony Big Bubba  Goliath wBruno vs Freezer Thompson  Ron Nations Jerry Lawler vs Russian Invader Jeff Jarrett  Billy Travis vs The Grapplers  Austin Idol  Tommy Rich vs Soul Train Jones  The Snowman wJimmy Dee</desc>
@@ -3949,6 +3945,10 @@ Part of the Locked On Podcast Network.</desc>
   <programme start="20250411062632 +0000" stop="20250411065323 +0000" channel="2395DB05-446E-4365-A77E-C8E65C4E7C2A">
     <title lang="en">Classic All-Star Wrestling 114</title>
     <desc lang="en">2021CompilationsWrestling Join host Adam Parsons as he takes fans back to watch the greatest legends of professional wrestling come to life once again!</desc>
+  </programme>
+  <programme start="20250411065323 +0000" stop="20250411065449 +0000" channel="2395DB05-446E-4365-A77E-C8E65C4E7C2A">
+    <title lang="en">End of Programming Day Sign Off</title>
+    <desc lang="en">End of Programming Day Sign Off</desc>
   </programme>
   <channel id="FD922D12-5FAC-4675-9C54-A459AFF26196">
     <display-name>Boxing TV</display-name>
@@ -4298,10 +4298,6 @@ Part of the Locked On Podcast Network.</desc>
   <channel id="678078CD-6199-425A-B668-DF532665F5FC">
     <display-name>Travelxp</display-name>
   </channel>
-  <programme start="20250411034100 +0000" stop="20250411041100 +0000" channel="678078CD-6199-425A-B668-DF532665F5FC">
-    <title lang="en">Xplore Bhutan</title>
-    <desc lang="en">Actress and travel enthusiast, Radhika Bangia explores the enigma that is Bhutan, when she visits Thimpu, the capital city with no traffic lights and no skyscrapers invading the skyline. Here, she checks out significant sights such as the Tibetan-style...</desc>
-  </programme>
   <programme start="20250411041100 +0000" stop="20250411044100 +0000" channel="678078CD-6199-425A-B668-DF532665F5FC">
     <title lang="en">World Heritage</title>
     <desc lang="en">The central plains of Sri Lanka are dotted with crumbling temples, lost cities and ruins of sacred Buddhist sites. It was here that ancient Sinhalese dynasties set up their capitals and supported massive artistic and architectural endeavors. Sigiriya, ...</desc>
@@ -4317,6 +4313,10 @@ Part of the Locked On Podcast Network.</desc>
   <programme start="20250411054100 +0000" stop="20250411061100 +0000" channel="678078CD-6199-425A-B668-DF532665F5FC">
     <title lang="en">World Heritage</title>
     <desc lang="en">The central plains of Sri Lanka are dotted with crumbling temples, lost cities and ruins of sacred Buddhist sites. It was here that ancient Sinhalese dynasties set up their capitals and supported massive artistic and architectural endeavors. Sigiriya, ...</desc>
+  </programme>
+  <programme start="20250411061100 +0000" stop="20250411064100 +0000" channel="678078CD-6199-425A-B668-DF532665F5FC">
+    <title lang="en">Burn Appetit</title>
+    <desc lang="en">Located in the heart of the Austrian Alps' most highly glaciated section, Zillertal offers Jolly the thrills of winter in summer. </desc>
   </programme>
   <channel id="9F3B1CEF-B411-4107-B589-E8BA34462C45">
     <display-name>BRB Travel + Food</display-name>
@@ -5474,10 +5474,6 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
   <channel id="2E9962D5-E6AC-4E69-92CC-F5E51F4E2BE9">
     <display-name>WTVR CBS6 News Richmond</display-name>
   </channel>
-  <programme start="20250411033500 +0000" stop="20250411041000 +0000" channel="2E9962D5-E6AC-4E69-92CC-F5E51F4E2BE9">
-    <title lang="en">Replay: CBS 6 News at 11 p.m.</title>
-    <desc lang="en">Replay: CBS 6 News at 11 p.m.</desc>
-  </programme>
   <programme start="20250411041000 +0000" stop="20250411050000 +0000" channel="2E9962D5-E6AC-4E69-92CC-F5E51F4E2BE9">
     <title lang="en">Today As It Happened</title>
     <desc lang="en">Today As It Happened</desc>
@@ -5493,6 +5489,10 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
   <programme start="20250411070000 +0000" stop="20250411080000 +0000" channel="2E9962D5-E6AC-4E69-92CC-F5E51F4E2BE9">
     <title lang="en">The National Report</title>
     <desc lang="en">The National Report</desc>
+  </programme>
+  <programme start="20250411080000 +0000" stop="20250411083000 +0000" channel="2E9962D5-E6AC-4E69-92CC-F5E51F4E2BE9">
+    <title lang="en">Today As It Happened</title>
+    <desc lang="en">Today As It Happened</desc>
   </programme>
   <channel id="AE20CFB2-DCE8-4B77-8338-BA93E8083649">
     <display-name>WKBW 7 News Buffalo</display-name>
@@ -5589,10 +5589,6 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
   <channel id="6A5F5D5D-9634-4611-8E1B-CBB94EDE0CB0">
     <display-name>WXMI FOX17 News West Michigan</display-name>
   </channel>
-  <programme start="20250411040000 +0000" stop="20250411041000 +0000" channel="6A5F5D5D-9634-4611-8E1B-CBB94EDE0CB0">
-    <title lang="en">Replay: FOX 17 News at 11</title>
-    <desc lang="en">Replay: FOX 17 News at 11</desc>
-  </programme>
   <programme start="20250411041000 +0000" stop="20250411050000 +0000" channel="6A5F5D5D-9634-4611-8E1B-CBB94EDE0CB0">
     <title lang="en">Today As It Happened</title>
     <desc lang="en">Today As It Happened</desc>
@@ -5608,6 +5604,10 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
   <programme start="20250411070000 +0000" stop="20250411080000 +0000" channel="6A5F5D5D-9634-4611-8E1B-CBB94EDE0CB0">
     <title lang="en">The National Report</title>
     <desc lang="en">The National Report</desc>
+  </programme>
+  <programme start="20250411080000 +0000" stop="20250411090000 +0000" channel="6A5F5D5D-9634-4611-8E1B-CBB94EDE0CB0">
+    <title lang="en">Today As It Happened</title>
+    <desc lang="en">Today As It Happened</desc>
   </programme>
   <channel id="A75FC2FE-BC1F-4935-816D-6566283A47D6">
     <display-name>WWMT News Channel 3 Grand Rapids, MI</display-name>
@@ -5980,10 +5980,6 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
   <channel id="EBB2E112-CD68-4C50-BBE4-F4EFAAB1B37C">
     <display-name>WNYT 13 (NBC) Albany NY</display-name>
   </channel>
-  <programme start="20250411033500 +0000" stop="20250411041000 +0000" channel="EBB2E112-CD68-4C50-BBE4-F4EFAAB1B37C">
-    <title lang="en">NewsChannel 13 Live at 11 (REPLAY)</title>
-    <desc lang="en">The day's major news events, business reports, local sports updates, weather information and tomorrow's forecast are presented by the NewsChannel 13 Team</desc>
-  </programme>
   <programme start="20250411041000 +0000" stop="20250411044500 +0000" channel="EBB2E112-CD68-4C50-BBE4-F4EFAAB1B37C">
     <title lang="en">NewsChannel 13 Live at 11 (REPLAY)</title>
     <desc lang="en">The day's major news events, business reports, local sports updates, weather information and tomorrow's forecast are presented by the NewsChannel 13 Team</desc>
@@ -6000,13 +5996,13 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
     <title lang="en">NewsChannel 13 Live at 11 (REPLAY)</title>
     <desc lang="en">The day's major news events, business reports, local sports updates, weather information and tomorrow's forecast are presented by the NewsChannel 13 Team</desc>
   </programme>
+  <programme start="20250411063000 +0000" stop="20250411070500 +0000" channel="EBB2E112-CD68-4C50-BBE4-F4EFAAB1B37C">
+    <title lang="en">NewsChannel 13 Live at 11 (REPLAY)</title>
+    <desc lang="en">WNYT 13 (NBC) Albany NY</desc>
+  </programme>
   <channel id="F7A89F4E-180A-469E-85A7-2E104AB4CD0B">
     <display-name>WHEC News 10 (NBC) Rochester NY</display-name>
   </channel>
-  <programme start="20250411033500 +0000" stop="20250411041000 +0000" channel="F7A89F4E-180A-469E-85A7-2E104AB4CD0B">
-    <title lang="en">News10NBC at Eleven (REPLAY)</title>
-    <desc lang="en">WHEC News 10 (NBC) Rochester NY</desc>
-  </programme>
   <programme start="20250411041000 +0000" stop="20250411044500 +0000" channel="F7A89F4E-180A-469E-85A7-2E104AB4CD0B">
     <title lang="en">News10NBC at Eleven (REPLAY)</title>
     <desc lang="en">The News 10NBC Team reports on the day's News, sports and community events. Also presented is weather information and tomorrow's forecast.</desc>
@@ -6020,6 +6016,10 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
     <desc lang="en">The News 10NBC Team reports on the day's News, sports and community events. Also presented is weather information and tomorrow's forecast.</desc>
   </programme>
   <programme start="20250411055500 +0000" stop="20250411063000 +0000" channel="F7A89F4E-180A-469E-85A7-2E104AB4CD0B">
+    <title lang="en">News10NBC at Eleven (REPLAY)</title>
+    <desc lang="en">The News 10NBC Team reports on the day's News, sports and community events. Also presented is weather information and tomorrow's forecast.</desc>
+  </programme>
+  <programme start="20250411063000 +0000" stop="20250411070500 +0000" channel="F7A89F4E-180A-469E-85A7-2E104AB4CD0B">
     <title lang="en">News10NBC at Eleven (REPLAY)</title>
     <desc lang="en">The News 10NBC Team reports on the day's News, sports and community events. Also presented is weather information and tomorrow's forecast.</desc>
   </programme>
@@ -6141,10 +6141,6 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
   <channel id="73A97059-3D2A-4FF2-BAEF-25ABCF777852">
     <display-name>CBS News Chicago</display-name>
   </channel>
-  <programme start="20250411033500 +0000" stop="20250411041000 +0000" channel="73A97059-3D2A-4FF2-BAEF-25ABCF777852">
-    <title lang="en">CBS News Chicago 10pm</title>
-    <desc lang="en">Breaking news and headlines, local weather forecasts, sports and traffic reports.</desc>
-  </programme>
   <programme start="20250411041000 +0000" stop="20250411050000 +0000" channel="73A97059-3D2A-4FF2-BAEF-25ABCF777852">
     <title lang="en">Latest Chicago News &amp; Headlines</title>
     <desc lang="en">Top stories in Chicago.</desc>
@@ -6158,6 +6154,10 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
     <desc lang="en">Top stories in Chicago.</desc>
   </programme>
   <programme start="20250411070000 +0000" stop="20250411080000 +0000" channel="73A97059-3D2A-4FF2-BAEF-25ABCF777852">
+    <title lang="en">Latest Chicago News &amp; Headlines</title>
+    <desc lang="en">Top stories in Chicago.</desc>
+  </programme>
+  <programme start="20250411080000 +0000" stop="20250411090000 +0000" channel="73A97059-3D2A-4FF2-BAEF-25ABCF777852">
     <title lang="en">Latest Chicago News &amp; Headlines</title>
     <desc lang="en">Top stories in Chicago.</desc>
   </programme>
@@ -7222,10 +7222,6 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
   <channel id="7D7450A0-459E-4747-AC41-354EDF49694F">
     <display-name>KSTP (ABC) News 5 St. Paul/Minneapolis, MN</display-name>
   </channel>
-  <programme start="20250411033500 +0000" stop="20250411041000 +0000" channel="7D7450A0-459E-4747-AC41-354EDF49694F">
-    <title lang="en">5 Eyewitness News Nightcast (REPLAY)</title>
-    <desc lang="en">The 5 Eyewitness News Team has Your Forecast First and comprehensive reports on impactful news from today, up-to-the-minute sports, and what to expect for tomorrow.</desc>
-  </programme>
   <programme start="20250411041000 +0000" stop="20250411044500 +0000" channel="7D7450A0-459E-4747-AC41-354EDF49694F">
     <title lang="en">5 Eyewitness News Nightcast (REPLAY)</title>
     <desc lang="en">The 5 Eyewitness News Team has Your Forecast First and comprehensive reports on impactful news from today, up-to-the-minute sports, and what to expect for tomorrow.</desc>
@@ -7242,13 +7238,13 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
     <title lang="en">5 Eyewitness News Nightcast (REPLAY)</title>
     <desc lang="en">KSTP (ABC) News 5 St. Paul/Minneapolis MN</desc>
   </programme>
+  <programme start="20250411071000 +0000" stop="20250411074500 +0000" channel="7D7450A0-459E-4747-AC41-354EDF49694F">
+    <title lang="en">5 Eyewitness News Nightcast (REPLAY)</title>
+    <desc lang="en">KSTP (ABC) News 5 St. Paul/Minneapolis MN</desc>
+  </programme>
   <channel id="0DA6A863-18F9-41DF-BBDE-BB6B3FB5E340">
     <display-name>KAAL  6 News (ABC) Rochester MN</display-name>
   </channel>
-  <programme start="20250411033500 +0000" stop="20250411041000 +0000" channel="0DA6A863-18F9-41DF-BBDE-BB6B3FB5E340">
-    <title lang="en">ABC 6 News at 10pm (REPLAY)</title>
-    <desc lang="en">The day's local, regional and national news, detailed events and late-breaking stories are presented by the ABC 6 News Team.</desc>
-  </programme>
   <programme start="20250411041000 +0000" stop="20250411044500 +0000" channel="0DA6A863-18F9-41DF-BBDE-BB6B3FB5E340">
     <title lang="en">ABC 6 News at 10pm (REPLAY)</title>
     <desc lang="en">The day's local, regional and national news, detailed events and late-breaking stories are presented by the ABC 6 News Team.</desc>
@@ -7265,13 +7261,13 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
     <title lang="en">ABC 6 News at 10pm (REPLAY)</title>
     <desc lang="en">The day's local, regional and national news, detailed events and late-breaking stories are presented by the ABC 6 News Team.</desc>
   </programme>
+  <programme start="20250411063000 +0000" stop="20250411070500 +0000" channel="0DA6A863-18F9-41DF-BBDE-BB6B3FB5E340">
+    <title lang="en">ABC 6 News at 10pm (REPLAY)</title>
+    <desc lang="en">The day's local, regional and national news, detailed events and late-breaking stories are presented by the ABC 6 News Team.</desc>
+  </programme>
   <channel id="0EAB5096-8CB3-4B61-9FCD-2E862D70E638">
     <display-name>WDIO ABC Duluth MN</display-name>
   </channel>
-  <programme start="20250411033500 +0000" stop="20250411041000 +0000" channel="0EAB5096-8CB3-4B61-9FCD-2E862D70E638">
-    <title lang="en">WDIO News at Ten (REPLAY)</title>
-    <desc lang="en">WDIO ABC Duluth MN</desc>
-  </programme>
   <programme start="20250411041000 +0000" stop="20250411044500 +0000" channel="0EAB5096-8CB3-4B61-9FCD-2E862D70E638">
     <title lang="en">WDIO News at Ten (REPLAY)</title>
     <desc lang="en">Local news, sports, weather presented by the WDIO News Team</desc>
@@ -7285,6 +7281,10 @@ Sadiq marries JANET and like most second wives, she becomes a pain in the neck f
     <desc lang="en">Local news, sports, weather presented by the WDIO News Team</desc>
   </programme>
   <programme start="20250411055500 +0000" stop="20250411063000 +0000" channel="0EAB5096-8CB3-4B61-9FCD-2E862D70E638">
+    <title lang="en">WDIO News at Ten (REPLAY)</title>
+    <desc lang="en">Local news, sports, weather presented by the WDIO News Team</desc>
+  </programme>
+  <programme start="20250411063000 +0000" stop="20250411070500 +0000" channel="0EAB5096-8CB3-4B61-9FCD-2E862D70E638">
     <title lang="en">WDIO News at Ten (REPLAY)</title>
     <desc lang="en">Local news, sports, weather presented by the WDIO News Team</desc>
   </programme>
