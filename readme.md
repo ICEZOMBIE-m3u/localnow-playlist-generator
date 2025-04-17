@@ -5,7 +5,7 @@
 
 - EPG XML URL:
 [https://raw.githubusercontent.com/BuddyChewChew/localnow-playlist-generator/refs/heads/main/epg.xml](https://raw.githubusercontent.com/BuddyChewChew/localnow-playlist-generator/refs/heads/main/epg.xml)
-- TIVIMATE USERS: Use `IPTV smarters` as your user-agent for the playlist. If channels freeze going in and out of commercials.
+
 
 ![Screenshot](https://github.com/BuddyChewChew/localnow-playlist-generator/blob/main/Screenshot%202025-04-11%20012429.jpg)
 
