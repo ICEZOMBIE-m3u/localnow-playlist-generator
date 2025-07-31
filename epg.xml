@@ -210,10 +210,6 @@
   <channel id="LN_B8EA63C6-5280-4CEF-9BBD-2CFB7270B9D0">
     <display-name>At Home with Family Handyman</display-name>
   </channel>
-  <programme start="20250731154004 +0000" stop="20250731161004 +0000" channel="LN_B8EA63C6-5280-4CEF-9BBD-2CFB7270B9D0">
-    <title lang="en">Leave It To Bryan | Turn Down or What</title>
-    <desc lang="en">Steve and Stacey can't prioritize their long overdue renos.</desc>
-  </programme>
   <programme start="20250731161004 +0000" stop="20250731170934 +0000" channel="LN_B8EA63C6-5280-4CEF-9BBD-2CFB7270B9D0">
     <title lang="en">Making It Home with Kortney and Dave | Ryan and Alisa</title>
     <desc lang="en">Kortney and Dave’s help Ryan and Alisa make the right reno investments to make their house feel like home.</desc>
@@ -229,6 +225,10 @@
   <programme start="20250731190834 +0000" stop="20250731200804 +0000" channel="LN_B8EA63C6-5280-4CEF-9BBD-2CFB7270B9D0">
     <title lang="en">Masters of Flip | Ice, Ice Baby</title>
     <desc lang="en">Kortney and Dave take on a seemingly small flip, which turns into a major reno overhaul.</desc>
+  </programme>
+  <programme start="20250731200804 +0000" stop="20250731210734 +0000" channel="LN_B8EA63C6-5280-4CEF-9BBD-2CFB7270B9D0">
+    <title lang="en">Masters of Flip | Who Paints Brick?</title>
+    <desc lang="en">Kortney and Dave get looks from neighbors when they paint a brick house a questionable color.</desc>
   </programme>
   <channel id="LN_7AD66CC7-82F6-45D7-A9DD-DCBC16958F71">
     <display-name>TODAY All Day</display-name>
@@ -1107,10 +1107,6 @@
   <channel id="LN_38D9E180-1A43-439F-800D-74268C5EC966">
     <display-name>ALF</display-name>
   </channel>
-  <programme start="20250731153840 +0000" stop="20250731160815 +0000" channel="LN_38D9E180-1A43-439F-800D-74268C5EC966">
-    <title lang="en">Someone to Watch Over Me: Part 1</title>
-    <desc lang="en">A series of robberies prompts ALF to want to help with Neighborhood Watch, when Willie is voted block captain.</desc>
-  </programme>
   <programme start="20250731160815 +0000" stop="20250731163707 +0000" channel="LN_38D9E180-1A43-439F-800D-74268C5EC966">
     <title lang="en">Someone to Watch Over Me: Part 2</title>
     <desc lang="en">Neighborhood Watch volunteers quit as the robberies continue. ALF takes direct action, which causes chaos.</desc>
@@ -1126,6 +1122,10 @@
   <programme start="20250731173529 +0000" stop="20250731180444 +0000" channel="LN_38D9E180-1A43-439F-800D-74268C5EC966">
     <title lang="en">Hit Me with Your Best Shot</title>
     <desc lang="en">It's the Tanners who learn a lesson while trying to passively resist a belligerent father and son.</desc>
+  </programme>
+  <programme start="20250731180444 +0000" stop="20250731183420 +0000" channel="LN_38D9E180-1A43-439F-800D-74268C5EC966">
+    <title lang="en">Movin' Out</title>
+    <desc lang="en">The Tanners may need to sell their house because Willie has been promoted to a supervisory position in San Deigo.</desc>
   </programme>
   <channel id="LN_081016AD-69A3-4236-A8A0-75391DB6F522">
     <display-name>Mystery Science Theater 3000</display-name>
@@ -1176,10 +1176,6 @@
   <channel id="LN_27B297E5-83A0-457F-B9EC-33C5A020F040">
     <display-name>FailArmy</display-name>
   </channel>
-  <programme start="20250731154100 +0000" stop="20250731161200 +0000" channel="LN_27B297E5-83A0-457F-B9EC-33C5A020F040">
-    <title lang="en">World's Most Expensive Fails</title>
-    <desc lang="en">Losing in a video game can be expensive.</desc>
-  </programme>
   <programme start="20250731161200 +0000" stop="20250731164300 +0000" channel="LN_27B297E5-83A0-457F-B9EC-33C5A020F040">
     <title lang="en">World's Most Expensive Fails</title>
     <desc lang="en">When things snap, crack, or break, all it's left is a mess and an even bigger financial burden.</desc>
@@ -1196,13 +1192,13 @@
     <title lang="en">FailArmy Now</title>
     <desc lang="en">What starvings artists, friends and families have in common.</desc>
   </programme>
+  <programme start="20250731181800 +0000" stop="20250731184900 +0000" channel="LN_27B297E5-83A0-457F-B9EC-33C5A020F040">
+    <title lang="en">FailArmy Now</title>
+    <desc lang="en">What wagons, deer and paint have in common.</desc>
+  </programme>
   <channel id="LN_397AAFA3-4393-4856-BB05-9CEF9637CFEB">
     <display-name>Just For Laughs</display-name>
   </channel>
-  <programme start="20250731153900 +0000" stop="20250731160800 +0000" channel="LN_397AAFA3-4393-4856-BB05-9CEF9637CFEB">
-    <title lang="en">Just for Laughs: All Access</title>
-    <desc lang="en">Just For Laughs: All Access is an exclusive stand-up series that features the biggest names from around the world. From the stages of Montreal’s grand Place des Arts and gritty Club Soda, Just For Laughs brings you the very best in stand-up today. Feat...</desc>
-  </programme>
   <programme start="20250731160800 +0000" stop="20250731163800 +0000" channel="LN_397AAFA3-4393-4856-BB05-9CEF9637CFEB">
     <title lang="en">Just for Laughs: All Access</title>
     <desc lang="en">Just For Laughs: All Access is an exclusive stand-up series that features the biggest names from around the world. From the stages of Montreal’s grand Place des Arts and gritty Club Soda, Just For Laughs brings you the very best in stand-up today. Feat...</desc>
@@ -1216,6 +1212,10 @@
     <desc lang="en">Just For Laughs: All Access is an exclusive stand-up series that features the biggest names from around the world. From the stages of Montreal’s grand Place des Arts and gritty Club Soda, Just For Laughs brings you the very best in stand-up today. Feat...</desc>
   </programme>
   <programme start="20250731173800 +0000" stop="20250731180800 +0000" channel="LN_397AAFA3-4393-4856-BB05-9CEF9637CFEB">
+    <title lang="en">Just for Laughs: All Access</title>
+    <desc lang="en">Just For Laughs: All Access is an exclusive stand-up series that features the biggest names from around the world. From the stages of Montreal’s grand Place des Arts and gritty Club Soda, Just For Laughs brings you the very best in stand-up today. Feat...</desc>
+  </programme>
+  <programme start="20250731180800 +0000" stop="20250731183800 +0000" channel="LN_397AAFA3-4393-4856-BB05-9CEF9637CFEB">
     <title lang="en">Just for Laughs: All Access</title>
     <desc lang="en">Just For Laughs: All Access is an exclusive stand-up series that features the biggest names from around the world. From the stages of Montreal’s grand Place des Arts and gritty Club Soda, Just For Laughs brings you the very best in stand-up today. Feat...</desc>
   </programme>
@@ -1291,10 +1291,6 @@
   <channel id="LN_2C7D3071-F7F4-4039-8FAB-195FA86E22B5">
     <display-name>Three Stooges+</display-name>
   </channel>
-  <programme start="20250731154554 +0000" stop="20250731160849 +0000" channel="LN_2C7D3071-F7F4-4039-8FAB-195FA86E22B5">
-    <title lang="en">BRIDELESS GROOM</title>
-    <desc lang="en">Voice teacher Shemp must marry before six o'clock.</desc>
-  </programme>
   <programme start="20250731160849 +0000" stop="20250731163202 +0000" channel="LN_2C7D3071-F7F4-4039-8FAB-195FA86E22B5">
     <title lang="en">SING A SONG OF SIX PANTS</title>
     <desc lang="en">The Stooges are tailors.</desc>
@@ -1310,6 +1306,10 @@
   <programme start="20250731171959 +0000" stop="20250731174452 +0000" channel="LN_2C7D3071-F7F4-4039-8FAB-195FA86E22B5">
     <title lang="en">PARDON MY SCOTCH</title>
     <desc lang="en">The stooge's friend Claude sells them his old lemon.</desc>
+  </programme>
+  <programme start="20250731174452 +0000" stop="20250731180914 +0000" channel="LN_2C7D3071-F7F4-4039-8FAB-195FA86E22B5">
+    <title lang="en">SQUAREHEADS OF THE ROUND TABLE</title>
+    <desc lang="en">The Stooges help their friend Cedric the Blacksmith.</desc>
   </programme>
   <channel id="LN_5452C818-BB93-4942-8657-348FE9DED580">
     <display-name>Family Unscripted</display-name>
@@ -1498,10 +1498,6 @@
   <channel id="LN_98BB142C-3E04-4D9C-924F-A4DAD0410741">
     <display-name>Cosmic Frontiers</display-name>
   </channel>
-  <programme start="20250731153830 +0000" stop="20250731160734 +0000" channel="LN_98BB142C-3E04-4D9C-924F-A4DAD0410741">
-    <title lang="en">Space: The New Frontier</title>
-    <desc lang="en">The moon is our closest celestial companion. Few have walked on her surface, but her allure remains strong.</desc>
-  </programme>
   <programme start="20250731160734 +0000" stop="20250731163838 +0000" channel="LN_98BB142C-3E04-4D9C-924F-A4DAD0410741">
     <title lang="en">Space: The New Frontier</title>
     <desc lang="en">As we take a closer look at Mercury and Venus, we find more questions than answers.</desc>
@@ -1517,6 +1513,10 @@
   <programme start="20250731181419 +0000" stop="20250731192130 +0000" channel="LN_98BB142C-3E04-4D9C-924F-A4DAD0410741">
     <title lang="en">Tsunami: Facing the Global Threat</title>
     <desc lang="en">Tsunamis are so sudden and powerful that in a matter of minutes, they can wipe out a coastline.</desc>
+  </programme>
+  <programme start="20250731192130 +0000" stop="20250731202717 +0000" channel="LN_98BB142C-3E04-4D9C-924F-A4DAD0410741">
+    <title lang="en">Living with Volcanoes</title>
+    <desc lang="en">All around the earth, crowds pray and worship volcanoes that are sacred to them.</desc>
   </programme>
   <channel id="LN_2E0F834A-CF0B-42E0-84A1-66BF67ADDE58">
     <display-name>DECLASSIFIED</display-name>
@@ -1567,10 +1567,6 @@
   <channel id="LN_720A158D-FCF3-4A78-B0C9-D65CB40FACE0">
     <display-name>The Bold and the Beautiful</display-name>
   </channel>
-  <programme start="20250731154355 +0000" stop="20250731161144 +0000" channel="LN_720A158D-FCF3-4A78-B0C9-D65CB40FACE0">
-    <title lang="en">The Bold And The Beautiful: Episode 28</title>
-    <desc lang="en">Ridge suspects Kristen was with Caroline, but she lies. Margo confronts Ridge about Caroline.</desc>
-  </programme>
   <programme start="20250731161144 +0000" stop="20250731163933 +0000" channel="LN_720A158D-FCF3-4A78-B0C9-D65CB40FACE0">
     <title lang="en">The Bold And The Beautiful: Episode 29</title>
     <desc lang="en">Donna tries to make Rocco jealous by kissing Mark. Rocco retaliates by kissing Katie while Donna is watching.</desc>
@@ -1586,6 +1582,10 @@
   <programme start="20250731173448 +0000" stop="20250731180238 +0000" channel="LN_720A158D-FCF3-4A78-B0C9-D65CB40FACE0">
     <title lang="en">The Bold And The Beautiful: Episode 32</title>
     <desc lang="en">Storm is sad that it's been 7 years since his father left. Thorne asks Kristen to tell him where Caroline is.</desc>
+  </programme>
+  <programme start="20250731180238 +0000" stop="20250731183017 +0000" channel="LN_720A158D-FCF3-4A78-B0C9-D65CB40FACE0">
+    <title lang="en">The Bold And The Beautiful: Episode 33</title>
+    <desc lang="en">Grandma Logan tells Beth Steven knew about Beth’s love for Eric. Kristen tells Thorne where Caroline is.</desc>
   </programme>
   <channel id="LN_A2206C2C-DD1C-423A-9290-99E6B308C3CB">
     <display-name>21 Jump Street</display-name>
@@ -1728,10 +1728,6 @@
   <channel id="LN_446FABE6-D80D-406D-9254-99DCBF06DE3D">
     <display-name>Telemundo al Dia</display-name>
   </channel>
-  <programme start="20250731154200 +0000" stop="20250731160800 +0000" channel="LN_446FABE6-D80D-406D-9254-99DCBF06DE3D">
-    <title lang="en">Hoy día</title>
-    <desc lang="en">El show de las mañanas que ofrece más entretenimiento, diversión e información.</desc>
-  </programme>
   <programme start="20250731160800 +0000" stop="20250731165500 +0000" channel="LN_446FABE6-D80D-406D-9254-99DCBF06DE3D">
     <title lang="en">Hoy día</title>
     <desc lang="en">El show de las mañanas que ofrece más entretenimiento, diversión e información.</desc>
@@ -1747,6 +1743,10 @@
   <programme start="20250731191900 +0000" stop="20250731200000 +0000" channel="LN_446FABE6-D80D-406D-9254-99DCBF06DE3D">
     <title lang="en">Noticias Telemundo mediodía</title>
     <desc lang="en">Un informativo con un estilo único de narrar noticias de una manera atractiva.</desc>
+  </programme>
+  <programme start="20250731200000 +0000" stop="20250731205900 +0000" channel="LN_446FABE6-D80D-406D-9254-99DCBF06DE3D">
+    <title lang="en">Top Chef VIP</title>
+    <desc lang="en">Veinte celebridades se enfrentan para ganar el título de Top Chef VIP y 200 mil dólares.</desc>
   </programme>
   <channel id="LN_F358A202-36D3-44EE-A4B8-E0D08CE958A7">
     <display-name>Noticias Telemundo Ahora</display-name>
@@ -2395,10 +2395,6 @@
   <channel id="LN_93B6C05F-675F-4ED1-8FF9-942FDA693714">
     <display-name>Mysterious Worlds</display-name>
   </channel>
-  <programme start="20250731152151 +0000" stop="20250731160951 +0000" channel="LN_93B6C05F-675F-4ED1-8FF9-942FDA693714">
-    <title lang="en">Mysteries at the Museum</title>
-    <desc lang="en">Don Wildman explores the myths and mysteries behind America's nerve center.</desc>
-  </programme>
   <programme start="20250731160951 +0000" stop="20250731165824 +0000" channel="LN_93B6C05F-675F-4ED1-8FF9-942FDA693714">
     <title lang="en">Mysteries at the Museum</title>
     <desc lang="en">Don investigates a deadly disaster, a heroic canine and a sinister curse.</desc>
@@ -2415,13 +2411,13 @@
     <title lang="en">Mysteries at the Museum</title>
     <desc lang="en">Don investigates a brave teenager, a perilous stunt and a near disaster.</desc>
   </programme>
+  <programme start="20250731192257 +0000" stop="20250731201129 +0000" channel="LN_93B6C05F-675F-4ED1-8FF9-942FDA693714">
+    <title lang="en">Mysteries at the Museum</title>
+    <desc lang="en">Don examines an iconic film, a cursed diamond and a bizarre medical case.</desc>
+  </programme>
   <channel id="LN_E856E29A-0D9D-4250-B163-CCCCEE58E228">
     <display-name>Haunt TV</display-name>
   </channel>
-  <programme start="20250731154510 +0000" stop="20250731161127 +0000" channel="LN_E856E29A-0D9D-4250-B163-CCCCEE58E228">
-    <title lang="en">Close Encounters</title>
-    <desc lang="en">Eye an alien dive-bomber and a UFO that shoots fire at those who get too close.</desc>
-  </programme>
   <programme start="20250731161127 +0000" stop="20250731171042 +0000" channel="LN_E856E29A-0D9D-4250-B163-CCCCEE58E228">
     <title lang="en">Paranormal 911</title>
     <desc lang="en">Join an EMT who has the fright of her life; meet a scary spirit at a crash site.</desc>
@@ -2437,6 +2433,10 @@
   <programme start="20250731190319 +0000" stop="20250731192936 +0000" channel="LN_E856E29A-0D9D-4250-B163-CCCCEE58E228">
     <title lang="en">Close Encounters</title>
     <desc lang="en">Marvel at Saskatchewan crop circles and a Hudson Valley wave of sightings.</desc>
+  </programme>
+  <programme start="20250731192936 +0000" stop="20250731195553 +0000" channel="LN_E856E29A-0D9D-4250-B163-CCCCEE58E228">
+    <title lang="en">Close Encounters</title>
+    <desc lang="en">Eye an alien dive-bomber and a UFO that shoots fire at those who get too close.</desc>
   </programme>
   <channel id="LN_D461B360-8F08-47BD-9E39-0B6B605C3F9E">
     <display-name>Unexplained</display-name>
@@ -2740,10 +2740,6 @@
   <channel id="LN_0533EDE3-0FB3-444E-8AEB-D7307D4EB5FA">
     <display-name>How To</display-name>
   </channel>
-  <programme start="20250731154549 +0000" stop="20250731161026 +0000" channel="LN_0533EDE3-0FB3-444E-8AEB-D7307D4EB5FA">
-    <title lang="en">How It's Made</title>
-    <desc lang="en">Discover how filigree glass, fish food and motor homes are manufactured.</desc>
-  </programme>
   <programme start="20250731161026 +0000" stop="20250731163507 +0000" channel="LN_0533EDE3-0FB3-444E-8AEB-D7307D4EB5FA">
     <title lang="en">How It's Made</title>
     <desc lang="en">Explore the secrets behind ketchup and walking sticks.</desc>
@@ -2759,6 +2755,10 @@
   <programme start="20250731172444 +0000" stop="20250731174925 +0000" channel="LN_0533EDE3-0FB3-444E-8AEB-D7307D4EB5FA">
     <title lang="en">How It's Made</title>
     <desc lang="en">Discover how nail clippers and canola oil are manufactured.</desc>
+  </programme>
+  <programme start="20250731174925 +0000" stop="20250731181406 +0000" channel="LN_0533EDE3-0FB3-444E-8AEB-D7307D4EB5FA">
+    <title lang="en">How It's Made</title>
+    <desc lang="en">Explore the secrets behind dial thermometers, hummus and straw sombreros.</desc>
   </programme>
   <channel id="LN_49B70F9E-0E39-4E94-B8D7-521E5EF1C0ED">
     <display-name>The Boat Show</display-name>
@@ -2924,10 +2924,6 @@
   <channel id="LN_0A695856-8690-46B1-85AD-56ED3D25C958">
     <display-name>AXS TV Now</display-name>
   </channel>
-  <programme start="20250731154256 +0000" stop="20250731160943 +0000" channel="LN_0A695856-8690-46B1-85AD-56ED3D25C958">
-    <title lang="en">SPIN's 100 Greatest Rock Stars</title>
-    <desc lang="en">Find out who made the list of 100 Greatest Rock Stars as experts like Andy Summers, Terri Nunn, Carnie Wilson, and more count us down!</desc>
-  </programme>
   <programme start="20250731160943 +0000" stop="20250731163927 +0000" channel="LN_0A695856-8690-46B1-85AD-56ED3D25C958">
     <title lang="en">Sounds Delicious with Carnie Wilson</title>
     <desc lang="en">This episode is all about going solo. Carnie Wilson makes individual pot pies, single serving banana pudding, and celebrates the solo career of Steve Perry.</desc>
@@ -2943,6 +2939,10 @@
   <programme start="20250731174014 +0000" stop="20250731181004 +0000" channel="LN_0A695856-8690-46B1-85AD-56ED3D25C958">
     <title lang="en">The Top Ten Revealed</title>
     <desc lang="en">On this episode of The Top Ten Revealed: 200 Greatest Songs of the 70s, we're keeping the countdown going with songs #120-111.</desc>
+  </programme>
+  <programme start="20250731181004 +0000" stop="20250731183956 +0000" channel="LN_0A695856-8690-46B1-85AD-56ED3D25C958">
+    <title lang="en">The Top Ten Revealed</title>
+    <desc lang="en">The Top Ten Revealed: 200 Greatest Songs of the 70s continues counting down with songs #110-101.</desc>
   </programme>
   <channel id="LN_AD24E4C2-7093-481F-B23F-C0AEF0548DAD">
     <display-name>Loupe Art</display-name>
@@ -3135,10 +3135,6 @@ Nothing is left to chance in her career.</desc>
   <channel id="LN_23F40B93-4CDF-46AC-A617-60935E7562CC">
     <display-name>Outdoor America</display-name>
   </channel>
-  <programme start="20250731154105 +0000" stop="20250731161149 +0000" channel="LN_23F40B93-4CDF-46AC-A617-60935E7562CC">
-    <title lang="en">Silver Kings</title>
-    <desc lang="en">Follow Florida Keys Backcountry/Flats Guide Capt. Raskob &amp; Guests in search of Tarpon, Bonefish &amp; Permit.</desc>
-  </programme>
   <programme start="20250731161149 +0000" stop="20250731164237 +0000" channel="LN_23F40B93-4CDF-46AC-A617-60935E7562CC">
     <title lang="en">Sport Fishing TV</title>
     <desc lang="en">Tuna, cobia, and dolphin thrive around oil rigs 80 miles offshore in this unique fishing paradise.</desc>
@@ -3154,6 +3150,10 @@ Nothing is left to chance in her career.</desc>
   <programme start="20250731174439 +0000" stop="20250731181548 +0000" channel="LN_23F40B93-4CDF-46AC-A617-60935E7562CC">
     <title lang="en">George Poveromo’s World of Saltwater Fishing</title>
     <desc lang="en">The winter Spanish mackerel run in Florida Bay offers fast action. George launches from Angler House to join!</desc>
+  </programme>
+  <programme start="20250731181548 +0000" stop="20250731184517 +0000" channel="LN_23F40B93-4CDF-46AC-A617-60935E7562CC">
+    <title lang="en">Guide’s Tails</title>
+    <desc lang="en">Neither wind, rain, nor heat stops Capt. Jamie &amp; Capt. Ed from searching sheltered waters for tarpon.</desc>
   </programme>
   <channel id="LN_E8E1D8F4-58AF-488E-A79B-9A87C2003666">
     <display-name>Carbon TV</display-name>
